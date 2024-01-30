@@ -14,6 +14,10 @@ export default defineConfig({
   },
   build: {
     rollupOptions: {
+      input: {
+        index: 'index.html',
+        200: '200.html',
+      },
       onwarn: (warning, warn) => {
         if (warning.code === 'MODULE_LEVEL_DIRECTIVE') {
           return;
