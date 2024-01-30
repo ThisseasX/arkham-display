@@ -1,5 +1,7 @@
 export default {
   root: ({ breakpoints }: any) => ({
+    display: 'flex',
+    flexDirection: 'column',
     width: '419px',
     [breakpoints.down('sm')]: {
       width: '100%',
@@ -26,5 +28,6 @@ export default {
   },
   description: {
     mb: 3,
+    flex: 1,
   },
 };
